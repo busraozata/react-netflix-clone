@@ -1,0 +1,62 @@
+.header {
+   
+    color: white;
+    padding: 1.3rem 0rem;
+
+    img {
+        max-width: 5rem;
+        object-fit: cover;
+    }
+    ul{
+        li{
+            a{
+                color: var(--color-white) ;
+            }
+        }
+    }
+
+    &.sticky{
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: var(--main-color);
+        ul{
+            li{
+                a{
+                    color: var(--main-color) !important;
+                }
+            }
+        }
+    }
+
+    .icon {
+        margin: 0rem 0.5rem;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .profile {
+        position: relative;
+
+        .options {
+            display: none;
+
+        }
+
+        &:hover {
+            .options {
+                top: 2rem;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                background-color: var(--main-color);
+                padding: 1rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+
+}
